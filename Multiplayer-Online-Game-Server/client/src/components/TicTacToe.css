@@ -1,0 +1,103 @@
+/* General Game Styles */
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Game Board */
+.game-board {
+    margin-right: 20px;
+}
+
+/* Board Rows */
+.board-row {
+    display: flex;
+}
+
+/* Square Styles */
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0; /* Slightly darker background */
+    border: 2px solid #ccc; /* Softer border color */
+    border-radius: 6px; /* Rounded corners for squares */
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50; /* Darker text color for better contrast */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.square.blank {
+    background-color: #ffffff; /* Keep blank square color */
+    cursor: default;
+}
+
+.square:hover {
+    background-color: #d0d0d0; /* Slight hover effect */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Moving Square Effect */
+.square.moving {
+    transform: scale(1.1); /* Scale up on movement */
+    background-color: #cccccc; /* Temporary color change */
+}
+
+/* Game Information Panel */
+.game-info {
+    width: 200px;
+    background-color: #ffffff; /* White background for the info panel */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* List of Moves */
+.game-info ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Game Info Button Styles */
+.game-info button {
+    width: 100%;
+    padding: 10px; /* Increased padding for comfort */
+    margin-top: 10px;
+    background-color: #28a745; /* Green for game actions */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.game-info button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Scramble Button Styles */
+button {
+    margin-top: 10px;
+    padding: 10px 16px; /* Increased padding for comfort */
+    font-size: 16px;
+    background-color: #007bff; /* Blue for primary actions */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
